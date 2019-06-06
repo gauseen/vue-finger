@@ -1,6 +1,6 @@
 {
   "name": "@gauseen/vue-finger",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "licence": "MIT",
   "description": "Mobile gesture for vuejs",
   "keywords": ["vue", "vue.js", "finger", "gesture", "tap", "touch"],
