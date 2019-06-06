@@ -1,34 +1,45 @@
-# vue-finger
+## vue-finger
 
-## Project setup
-```
-npm install
-```
+> Vuejs 手势库，基于 [AlloyFinger][AlloyFinger] 开发
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
+### [Live Demo][Demo]
 
-### Compiles and minifies for production
-```
-npm run build
+### 安装
+
+```sh
+npm i -S @gauseen/vue-finger
+# OR
+yarn add @gauseen/vue-finger
 ```
 
-### Run your tests
-```
-npm run test
+### 使用
+```js
+// main.js
+
+import Vue from 'vue'
+import VueFinger from '../src/directives'
+
+Vue.use(VueFinger)
 ```
 
-### Lints and fixes files
-```
-npm run lint
+```html
+<template>
+  <button v-fg:tap="tap" :style="styleTapBgColor">tap</button>
+</template>
+
+<script>
+export default {
+  name: 'demo',
+  methods: {
+    tap (evt) {
+      console.log('tap: ', evt)
+    },
+  },
+}
+</script>
 ```
 
-### Run your unit tests
-```
-npm run test:unit
-```
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+<!-- 链接 -->
+[AlloyFinger]: https://github.com/AlloyTeam/AlloyFinger
+[Demo]: '

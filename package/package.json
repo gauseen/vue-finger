@@ -1,0 +1,21 @@
+{
+  "name": "@gauseen/vue-finger",
+  "version": "0.1.0",
+  "licence": "Apache-2.0",
+  "description": "Mobile gesture for vuejs",
+  "keywords": ["vue", "vue.js", "finger", "gesture", "tap", "touch"],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/gauseen/vue-finger"
+  },
+  "author": {
+    "name": "Thorsten Lünborg",
+    "url": "https://github.com/linusborg"
+  },
+  "main": "dist/KoFiButton.vue",
+  "unpkg": "dist/umd/VueFinger.umd.min.js",
+  "jsDelivr": "dist/umd/VueFinger.umd.min.js",
+  "files": [
+    "dist"
+  ]
+}
