@@ -4,7 +4,10 @@
 
 ### 预览
 
-[Live Demo][Demo]
+[Live Demo][Demo]  
+
+移动端体验更佳  
+`PC` 端记得打开<font color="#fa9d14">手机模拟器</font>
 
 ### 安装
 
