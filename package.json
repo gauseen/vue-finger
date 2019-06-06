@@ -4,10 +4,12 @@
   "private": true,
   "scripts": {
     "serve": "vue-cli-service serve demo/main.js",
-    "build": "rimraf package/dist && yarn build:lib && yarn copy",
-    "build:preview": "vue-cli-service build demo/main.js",
+    "build": "rimraf package/dist && npm run build:lib && npm run copy",
+    "build:app": "vue-cli-service build demo/main.js",
     "build:lib": "vue-cli-service build --target lib --name VueFinger --formats umd-min --dest package/dist/umd --no-clean src/directives.js",
     "copy": "cp README.md package/README.md && cd package/dist && mkdir es6 && cp ../../src/* es6/",
+    "ghbranch:push": "gh-pages -d dist",
+    "gh:preview": "npm run build:app && npm run ghbranch:push",
     "release": "np",
     "lint": "vue-cli-service lint",
     "test:unit": "vue-cli-service test:unit"
@@ -29,6 +31,7 @@
     "babel-jest": "^23.6.0",
     "eslint": "^5.16.0",
     "eslint-plugin-vue": "^5.0.0",
+    "gh-pages": "^2.0.1",
     "lint-staged": "^8.1.5",
     "rimraf": "^2.6.3",
     "vue-template-compiler": "^2.6.10"
