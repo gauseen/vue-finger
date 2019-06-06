@@ -9,12 +9,15 @@
     "url": "https://github.com/gauseen/vue-finger"
   },
   "author": {
-    "name": "Thorsten Lünborg",
-    "url": "https://github.com/linusborg"
+    "name": "gauseen",
+    "url": "https://github.com/gauseen"
   },
-  "main": "dist/KoFiButton.vue",
+  "main": "dist/es6/directives.js",
   "unpkg": "dist/umd/VueFinger.umd.min.js",
   "jsDelivr": "dist/umd/VueFinger.umd.min.js",
+  "dependencies": {
+    "alloyfinger": "^0.1.16"
+  },
   "files": [
     "dist"
   ]
