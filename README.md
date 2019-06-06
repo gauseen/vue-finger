@@ -45,6 +45,12 @@ export default {
 </script>
 ```
 
+### 浏览器导入
+
+```html
+<script type="text/javascript" src="https://unpkg.com/@gauseen/vue-finger"></script>
+```
+
 ### Api
 
 #### 监听手势事件  

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=0">
+    <link rel="icon" href="<%= BASE_URL %>favicon.ico">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/kognise/water.css@latest/dist/light.min.css">
+    <title>vue-finger test-umd</title>
+  </head>
+  <body>
+		<div id="app">
+			<button v-fg:tap="tap">tap</button>
+		</div>
+
+		<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+		<script type="text/javascript" src="../package/dist/umd/VueFinger.umd.min.js"></script>
+		<script>
+			Vue.use(VueFinger)
+			const vm = new Vue({
+				el: '#app',
+				methods: {
+					tap (evt) {
+						alert('taped')
+					},
+				},
+			})
+		</script>
+  </body>
+</html>
